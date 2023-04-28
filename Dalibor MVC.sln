@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dalibor MVC", "Dalibor MVC\Dalibor MVC.csproj", "{4DA6F6A0-AED1-400E-BCFD-5F9B101A15DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4DA6F6A0-AED1-400E-BCFD-5F9B101A15DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DA6F6A0-AED1-400E-BCFD-5F9B101A15DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DA6F6A0-AED1-400E-BCFD-5F9B101A15DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DA6F6A0-AED1-400E-BCFD-5F9B101A15DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7CABB664-E729-48FC-9A20-6E542D633F3D}
+	EndGlobalSection
+EndGlobal

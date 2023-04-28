@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="~/Styles/StylyWebu.css?v1">
+
+    <link rel="shortcut icon" href="~/images/logo originál.png" />
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="@Url.Action("Intro","Home")"> <img src="~/images/logo originál.png" style="max-height: 40px; padding-top: 10px;" /></a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="@Url.Action("Galeria","Home")">Galéria</a></li>
+                        <li><a href="@Url.Action("Omne","Home")">O mne</a></li>
+                        <li><a href="@Url.Action("Vzdelanie","Home")">Vzdelanie</a></li>
+                        <li><a href="@Url.Action("Zamestnanie","Home")">Zamestnanie</a></li>
+                        <li><a href="@Url.Action("Kontakt","Home")">Kontakt</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+    </div>
+
+
+
+    <div class="container-fluid">
+        <div class="renderbody">
+            @RenderBody()
+        </div>
+    </div>
+   
+
+</body>
+</html>

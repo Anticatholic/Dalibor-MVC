@@ -1,0 +1,49 @@
+﻿<style>
+    body {
+        background-image: url('../../images/joanna-kosinska-ugcdwkn91fs-unsplash.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto;
+    }
+</style>
+<div class="ramovanie">
+    <div class="row">
+
+        <div class="contact">
+            <div class="col-md-4">
+                <img src="~/images/logo originál.png"/>
+            </div>
+            <div class="col-md-4" style="margin-top: -2px;">
+                <div class="content">
+                    <h1>Kontakt</h1>
+                    <p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><span>dalibor.hegli@gmail.com</span></p>
+                    <p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span><span>0904 654 378</span></p>
+                </div>
+            </div>
+
+            <div class="col-md-4" style="font-size:25px; margin-top: -2px;">
+                <div class="content">
+                    Neváhajte ma kontaktovať aj cez kontaktný formulár. Odpoviem Vám čo najskôr.
+                    <br />
+                    <br />
+                    <form action="~/Views/Home/Omne.cshtml" onsubmit="return validateForm()" method="post" required>
+
+                        <label for="fname">Meno</label>
+                        <input type="text" id="Meno" name="Meno">
+
+                        <label for="lname">Priezvisko</label>
+                        <input type="text" id="Priezvisko" name="Priezvisko">
+                        <label for="subject">Napíšte mi</label>
+                        <textarea id="Napíštemi" name="Napíštemi" style="height:200px; width:100%;"></textarea>
+
+                        <a  type="input" href="@Url.Action("Omne","Home")" class="tlacidlo"><span>Odoslať</span></a>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,52 @@
+﻿@using Dalibor_MVC.Controllers
+@model Dalibor_MVC.Models.VzdelanieModel
+<!--Tabuľka so vzdelaním-->
+
+<div>
+    <style>
+        body {
+            background-image: url('../images/element5-digital-oycl7y4y0bk-unsplash.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: auto;
+        }
+    </style>
+    <div class="content">
+        <table style="width:50%;">
+            <tr>
+                <th>Škola</th>
+                <th>Mesto</th>
+                <th>Dátum ukončenia</th>
+            </tr>
+            <tr>
+                <td>Základná škola</td>
+                <td>@Model.ZakladnaSkola</td>
+                <td>1994</td>
+            </tr>
+            <tr>
+                <td>SOU Handlová</td>
+                <td>@Model.StrednaSkola</td>
+                <td>1997 Maturita</td>
+            </tr>
+            <tr>
+                <td>SPŠ Handlová</td>
+                <td>@Model.PriemyselnaSkola</td>
+                <td>2001 Absolventský diplom</td>
+            </tr>
+
+        </table>
+        <!--Kurzy a školenia cez class v Models-->
+        <h2>Kurzy a školenia</h2>
+        <ul>
+            @foreach (string pomenovaniekurzu in Model.ZoznamSkol.ZoznamKurzov)
+            {
+                <li>@pomenovaniekurzu</li>
+            }
+
+        </ul>
+    </div>
+</div>
+
+

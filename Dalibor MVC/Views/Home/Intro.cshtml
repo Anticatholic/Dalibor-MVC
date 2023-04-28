@@ -1,0 +1,55 @@
+﻿<body>
+    <style>
+        .navbar{
+           display: none;
+        }
+
+        .hero-image {
+            background-image: url('../images/igor-kasalovic-tndvfkxkbho-unsplash.jpg');
+            background-color: #cccccc;
+            height: 768px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            margin-top: -100px;
+        }
+
+        .hero-text {
+            font-family: Dancing Script, cursive;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: black;
+        }
+
+        .button {
+            border-radius: 4px;
+            background-color: #f4511e;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 18px;
+            padding: 10px;
+            width: 20px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 150px;
+        }
+        
+    </style>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1 style="font-size:60px">Som Dalibor Hegli</h1>
+            <h3 style="margin-bottom:30px; font-size: 30px">Váš osobný web designer</h3>
+
+
+            <a href="@Url.Action("Omne","Home")" class="button"><span>Vstúpte prosím</span></a>
+
+        </div>
+    </div>
+
+
+</body>
