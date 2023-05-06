@@ -31,14 +31,19 @@
                     <form action="~/Views/Home/Omne.cshtml" onsubmit="return validateForm()" method="post" required>
 
                         <label for="fname">Meno</label>
-                        <input type="text" id="Meno" name="Meno" style="color:black;">
+                        <input type="text" id="Meno a Priezvisko" name="Meno a Priezvisko" style="color:black;">
 
-                        <label for="lname">Priezvisko</label>
-                        <input type="text" id="Priezvisko" name="Priezvisko" style="color:black;">
+
+                        <label for="fname">Mail</label>
+                        <input type="text" id="Mail" name="Mail" style="color:black;">
+
+                        <label for="fname">Telefón</label>
+                        <input type="text" id="Telefon" name="Telefon" style="color:black;">
+
                         <label for="subject">Napíšte mi</label>
                         <textarea id="Napíštemi" name="Napíštemi" style="height:200px; width:100%; color:black;"></textarea>
 
-                        <a  type="input" href="@Url.Action("Omne","Home")" class="tlacidlo"><span>Odoslať</span></a>
+                        <a type="input" href="@Url.Action("Omne","Home")" class="tlacidlo"><span>Odoslať</span></a>
 
                     </form>
                 </div>

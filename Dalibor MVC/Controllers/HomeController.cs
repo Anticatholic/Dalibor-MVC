@@ -46,7 +46,8 @@ namespace Dalibor_MVC.Controllers
 
         public ActionResult Kontakt()
         {
-            return View();
+            KontaktModel model = new KontaktModel();
+            return View(model);
         }
     }
 }
